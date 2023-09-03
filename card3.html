@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card3</title>
+    <style>
+        .container{
+            height: 100vh;
+            width: 100vw;
+            background-image: -webkit-linear-gradient(45deg, #042112 0%, #FFFB7D 100%);
+            background-image: -moz-linear-gradient(45deg, #042112 0%, #FFFB7D 100%);
+            background-image: -o-linear-gradient(45deg, #042112 0%, #FFFB7D 100%);
+            background-image: linear-gradient(45deg, #042112 0%, #FFFB7D 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card{
+            display: flex;
+            flex-direction: row;
+            height: 70%;
+            width: 70%;
+            background-color: white;
+        }
+        #leftBox{
+            background-color: rgb(99, 27, 104);
+            height: 100%;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+        }
+        #rightBox{
+            height: 100%;
+            width: 50%;
+        }
+        #rightBox img{
+            height: 100%;
+            width: 100%;
+        }
+        header{
+            color: aliceblue;
+            font-size: 130px;
+            padding-left: 100px;
+        }
+        main{
+            color: aliceblue;
+            font-size: 70px;
+            padding-left: 100px;
+            padding-bottom: 10px;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .sub{
+            display: flex;
+            flex-direction: row;
+            color: aliceblue;
+            justify-content: space-around;
+            align-items: center;
+            padding-top:20px ; 
+            font-size: 60px;
+             padding-top: 190px;
+            padding-right: 160px;
+        }
+        .sub p{
+            font-size: 50px;
+        }
+        .sub h1{
+            font-size: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div id="leftBox">
+              <header>
+                <h2>Get insights that help your business grow</h2>
+              </header>
+              <main>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum sunt consectetur vel dolor mollitia cupiditate dolorum soluta obcaecati eum, ducimus nemo suscipit fuga aliquid id, blanditiis ut eaque accusantium aspernatur laboriosam iste, repellendus inventore quis excepturi. Blanditiis velit architecto at delectus ducimus eos natus quasi?</p>
+              </main>
+              <footer>
+                <div class="sub">
+                 <div>
+                    <h1>10K+</h1>
+                    <p>Comments</p>
+                 </div>
+                 <div>
+                    <h1>214</h1>
+                    <p>Paid Users</p>
+                 </div>
+                 <div>
+                    <h1>12M+</h1>
+                    <p>Views</p>
+                 </div>
+                </div>
+                
+              </footer>
+            </div>
+            <div id="rightBox">
+                <img src="tech.jpg" >
+            </div>
+             
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookCards</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        .container{
+            height: 100vh;
+            width: 100vw;
+            background-image: -webkit-linear-gradient(0deg, #FFDEE9 0%, #4d9591 100%);
+            background-image: -moz-linear-gradient(0deg, #FFDEE9 0%, #4d9591 100%);
+            background-image: -o-linear-gradient(0deg, #FFDEE9 0%, #4d9591 100%);
+            background-image: linear-gradient(0deg, #FFDEE9 0%, #4d9591 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+;
+        }
+        .card{
+            height: 850px;
+            width: 600px;
+            background-color: aliceblue;
+            border-radius: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+            gap: 25px;
+        }
+        .card img{
+            width: 100%;
+            height: 40%;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+        }
+        
+        .textBox{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            width: 70%;
+            font-size: 20px;
+            text-align: center;
+        }
+        #amountBox{
+            width: 80%;
+            height: 10%;
+            background-color: #70aca9;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-right: 20px;
+            padding-left: 20px;
+            /* padding: 20px; */
+        }
+        #leftBox{
+            width: fit-content;
+            height: 100%;
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .imgBox img{
+            height: 4rem;
+            width: 4rem;
+            border-radius: 50px;
+        }
+        #textAmountBox{
+            font-size: 20px;
+        }
+        .rightBox{
+            font-size: 20px;
+        }
+        #payment{
+            width: 80%;
+            height: 9%;
+            background-color: rgb(4, 4, 39);
+            border-radius: 10px;
+            color: aliceblue;
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        }
+        .cancleBox a{
+            text-decoration: none;
+            color: rgb(21, 13, 13);
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="book_s.jpg" >
+            <div class="textBox">
+                <h2>Order Summary</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil consectetur esse quam non fugiat, ipsa laudantium dolores provident suscipit dolore harum assumenda facere minus vitae repellat excepturi autem. A, doloremque.</p>
+            </div>
+            <div id="amountBox">
+                <div id="leftBox">
+                    <div class="imgBox">
+                        <img src="booklogo.jpg" >
+                    </div>
+                    <div id="textAmountBox">
+                        <p>Amount</p>
+                        <p>$99.9/year</p>
+                    </div>
+
+                </div>
+                <div class="rightBox">
+                    <a href="a">Change</a>
+
+                </div>
+            </div>
+            <button id="payment">
+                   <h2>Proceed to Payment</h2> 
+            </button>
+            <div class="cancleBox">
+                <a href="a">Cancle Order</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
